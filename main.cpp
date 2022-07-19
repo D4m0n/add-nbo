@@ -5,8 +5,6 @@
 #include <string.h>
 #include <netinet/in.h>
 
-#define BUFFER_SIZE 4*1024
-
 
 uint32_t get_byte_in_file(char *filename)
 {
