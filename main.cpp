@@ -6,7 +6,7 @@
 #include <netinet/in.h>
 
 
-uint32_t get_byte_in_file(char *filename)
+uint32_t get_bytes_in_file(char *filename)
 {
     FILE *fp;
     size_t size;
@@ -47,8 +47,8 @@ int main(int argc, char **argv)
         exit(-1);
     }
 
-    num1 = get_byte_in_file(argv[1]);
-    num2 = get_byte_in_file(argv[2]);
+    num1 = get_bytes_in_file(argv[1]);
+    num2 = get_bytes_in_file(argv[2]);
 
     printf("%u(0x%x) + %u(0x%x) = %u(0x%x)\n", num1, num1, num2, num2, num1+num2, num1+num2);
 }
